@@ -1,0 +1,116 @@
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<html lang="en">
+    <head>
+    
+<title>Navigation Menu Example</title>
+<h1><marquee>Welcome To Bike Hub</marquee> </h1>
+    
+<style>
+/* CSS for styling the navigation menu */
+nav {
+background-color: #333;
+color: rgb(33, 148, 201);
+padding: 10px;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+nav ul li a {
+color: rgb(30, 135, 196);
+text-decoration: none;
+}
+nav ul li a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<center><nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="Aboutus.html">about</a></li>
+<li><a href="regmy.html">Register</a></li>
+<li><a href="loginmy.html">Login</a></li>
+<li><a href="Contus.html">Contactus</a></li>
+</ul>
+</nav>
+</center>
+</body>
+</html>
+
+<body>
+<head>
+<title>Navigation Menu Example</title>
+<style>
+/* CSS for styling the navigation menu */
+nav {
+background-color: #3bbbe2;
+color: rgb(12, 12, 12);
+padding: 10px;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+nav ul li a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+</body>
+
+</html>
+
+<!-- Sli'de Show -->
+<section>
+<img class="mySlides" alt="bike1" src="Racingbikes.jpg"
+style="width:100%">
+<img class="mySlides" alt="bike2" src="wp9121954.webp"
+style="width:100%">
+<img class="mySlides" alt="bike3" src="RoadBikes.jpg"
+style="width:100%">
+<img class="mySlides" alt="bike4" src="YamahaR15.jpg"
+style="width:100%">
+<img class="mySlides" alt="bike5" src="kridn Electric Bike.jpg"
+style="width:100%">
+
+
+</section>
+<section>
+<script>
+// Automatic Slideshow - change image every 1 seconds
+var myIndex = 0;
+carousel()
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 3000);
+}
+</script>
+
+

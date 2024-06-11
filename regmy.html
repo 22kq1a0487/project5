@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript functions </title>  
+<head><center>
+<title>Registration Page </title> 
+<h1>Registration Page</h1>
+    </head>    
+     <style>
+      @media screen and (min-width: 600px) 
+{
+body{
+          background-image: url("YamahaR15.jpg");}
+          h1 { text-align: center; } }
+          body{
+      background-repeat: no-repeat;
+      background-size:cover ;
+      }
+
+          @media screen and (min-width: 200px) and (max-width: 600px) {
+body{
+          background-image: url("YamahaR15.jpg");}
+          h1 { text-align: center; } }
+          
+     </style>
+<body>
+  <form registrationForm onsubmit="return validateForm()">
+    <body text="orange"></body>
+   <h1><label for="FirstName">FirstName:</label></h1>
+   <h1><input type="text" id="FirstName" name="username" required><br></h1>
+   <h1><label for="MiddleName">MiddleName:</label></h1>
+   <h1><input type="text" id="MiddleName" name="username" required><br></h1>
+   <h1><label for="LastName">LastName:</label></h1>
+   <h1><input type="text" id="LastName" name="username" required><br></h1>
+   <label>   
+  <h1>Gender</h1>
+    <h1><input type="radio" name="male"/> Male <br></h1>  
+    <h1><input type="radio" name="female"/> Female <br></h1>  
+    <h1><input type="radio" name="other"/> Other <br></h1> 
+    <br>  
+   </label>
+   
+   <label>
+    DOB : <input type ="date"name="DOB"><br><br>  
+   </label>
+
+   <h1><label for="email">Email:</label></h1>
+   <h1><input type="email" id="email" name="email" required><br></h1>
+
+   <h1><label for="password">Password:</label></h1>
+   <h1><input type="password" id="password" name="password" required><br></h1>
+
+    <h1><label for="confirmPassword">Confirm Password:</label></h1>
+    <h1><input type="password" id="confirmPassword" name="confirmPassword" required><br></h1>
+
+    <h1><input type="submit" value="Register"></h1>
+  </form>
+
+  <script>
+    function validateForm() {
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Check if passwords match
+      if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return false;
+      }
+
+      // Validate other fields (you can add more validation as needed)
+      if (username.length < 4 || username.length > 20) {
+        alert("Username must be between 4 and 20 characters");
+        return false;
+      }
+
+      if (!validateEmail(email)) {
+        alert("Invalid email format");
+        return false;
+      }
+
+      return true;
+    }
+
+    function validateEmail(email) {
+      // A simple email validation regular expression
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
+    }
+  </script>
+</body> 
+</html>
+    

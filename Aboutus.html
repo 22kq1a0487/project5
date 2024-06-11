@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>html functions </title>  
+   <head>
+      <title>About</title>
+   </head>
+   <body text="Red"></body>
+    <h2><marquee>About The Bikes</marquee></h2>
+    <h1>The first internal combustion, petroleum fueled motorcycle was the Daimler Reitwagen.
+         It was designed and built by the German inventors Gottlieb Daimler and Wilhelm Maybach in Bad Cannstatt, Germany, in 1885
+         The inventors called their invention the Reitwagen ("riding car"). It was designed as an expedient testbed for their new engine,
+          rather than a true prototype vehicle.</h1>
+          <h1>inventors of motorcycle  !</h1>
+          <section><center>
+            <!-- Sli'de Show -->
+            <img class="mySlides" alt="" src="firstmotorbike.jpg"
+            style="width:50%">
+            <img class="mySlides" alt="" src="Racingbikes.jpg"
+            style="width:50%">
+            <img class="mySlides" alt="" src="RoyalEnfield.jpg"
+            style="width:50%">
+            <img class="mySlides" alt="" src="MT15Yamaha.jpg"
+            style="width:50%">
+            <img class="mySlides" alt="" src="Royalbullet1.jpg"
+            style="width:50%">
+            <img class="mySlides" alt="" src="YamahaR15.jpg"
+            style="width:50%">
+            </center>
+        </section>
+        <script>
+        // Automatic Slideshow - change image every 1 seconds
+        var myIndex = 0;
+        carousel()
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+        }
+        </script>
+<style>
+        body{
+            background-size:1600px,1750px;
+        }   
+     </style>
+     <body background="YamahaR15.jpg"></body>
+</html>
